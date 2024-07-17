@@ -45,9 +45,9 @@ public class IgnoreCommand implements BlabberCommand {
 			sqlQuery = "INSERT INTO users_history (blabber, event) VALUES (\"" + username + "\", \"" + event + "\")";
 			logger.info(sqlQuery);
 			sqlStatement.execute(sqlQuery);
-			/* END EXAMPLE VULNERABILITY */
+			/* END EXAMPLE VULNERABILITY Test */
 		} catch (SQLException e) {
-			// TODO Auto-generated catch blocked
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
